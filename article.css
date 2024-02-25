@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400&display=swap');
+
+.main {
+    font-family: "EB Garamond", serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+header {
+    margin-top: 150px;
+    text-align: left;
+
+}
+
+h1 {
+    margin: 0;
+    font-family: 'Univers LT Std';
+    font-size: 50px;
+    line-height: 50px;
+}
+
+#publish-date {
+    font-style: italic;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
+
+footer {
+    text-align: right;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+.sub {
+    padding-bottom: 30px;
+}
+
+dl {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 13px;
+}
+
+
+.large-block {
+    padding: 200px;
+}
+
+.back-padding {
+    position: fixed;
+    background-color: white;
+}
+
+.back {
+    color: grey;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.image-frame {
+    height: 100vh;
+    height: 500px;
+    overflow: hidden; 
+    margin-bottom: 20px;
+}
+
+.image-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.image-frame-art {
+    height: 100%;
+    overflow: hidden; 
+    width: 50%;
+}
+
+.image-frame-art img {
+    width: 100%;
+}
+
+.small {
+    padding-top: 12%;
+}
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+ max-width: 70%;
+ max-height: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  font-size: 35px;
+  color: #f1f1f1;
+  cursor: pointer;
+}

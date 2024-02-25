@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eek</title>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+    <div id="cursor">X: 0, Y: 0</div>
+
+    <script>
+        document.addEventListener('mousemove', (e) => {
+          const cursor = document.getElementById('cursor');
+          const x = (e.pageX - window.innerWidth / 2).toFixed(1);
+          const y = (e.pageY - window.innerHeight / 2).toFixed(1);
+    
+          cursor.textContent = `X: ${x}, Y: ${y}`;
+        });
+      </script>
+ 
+    <div class="pan-zoom-container" id="panZoomContainer">
+        <!-- Replace src attribute with the path to your images -->
+        <a href="#" onclick="openModal('a_ghost_said.png')">
+            <div class="colored-element" id="element1" style="left: 7950px; top: 8400px; width: 10px;">
+              <img src="a_ghost_said.png" alt="Image 2">
+            </div>
+          </a>
+          
+        <a href="felix.html"><div class="colored-element" id="element2" style="left: 7600px; top: 8100px; width: 0.5px;">
+            <img src="DBA.jpg" alt="Image 2">
+        </div></a>
+        <a href="chatreuse-and-other-colours.html"><div class="colored-element" id="element3" style="left: 7800px; top: 8000px;">
+            <img src="chatreuse.png" alt="Image 3">
+        </div></a>
+        <a href="felix-interview.html"><div class="colored-element" id="element3" style="left: 7900px; top: 8200px;">
+            <img src="felix.png" alt="Image 3">
+        </div></a> 
+        <a href="gunung-tan.html"><div class="colored-element" id="element3" style="left: 7650px; top: 7950px;">
+            <img src="both-art.png" alt="Image 3">
+        </div></a>
+        <a href="heaven-knows-what.html"><div class="colored-element" id="element3" style="left: 7450px; top: 7950px;">
+            <img src="heaven-knows-what.jpg" alt="Image 3">
+        </div></a>
+        <div class="colored-element title" id="element4" style="left: 0px; top: 0px;">ELLIPTICAL EXPERIENCES AT THE KENO</div>
+        <div class="colored-element" id="element5" style="left: 0px; top: 0px;">hold down mouse or finger to pan around <br>
+            use scroll wheel or fingers to zoom in and out</div>
+    </div>
+
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="expandedImage" class="modal-content">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
