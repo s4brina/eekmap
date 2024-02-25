@@ -142,3 +142,13 @@ dl {
 #article-content  {
     font-size: 18px;
 }
+
+#fixedLogo img {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 20px; /* Adjust this margin as needed */
+    z-index: 999; /* Ensure it appears above other elements */
+    max-width: 6%;
+    max-height: 6%;
+  }
