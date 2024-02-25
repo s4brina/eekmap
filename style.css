@@ -298,5 +298,13 @@ height: 300vh;
   font-weight: 900;
   font-stretch: expanded;
 }
-@s4brina
-Comment
+
+
+#fixedLogo {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 20px; /* Adjust this margin as needed */
+  z-index: 999; /* Ensure it appears above other elements */
+}
+
