@@ -137,3 +137,8 @@ dl {
   color: #f1f1f1;
   cursor: pointer;
 }
+
+
+#article-content  {
+    font-size: 18px;
+}
