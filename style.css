@@ -217,3 +217,39 @@ a:hover {
   margin-bottom: 0px;
 }
 
+
+
+/* Add this to your existing style.css or in a <style> tag in the head of your HTML */
+.navigation-list {
+  position: fixed;
+  top: 100px; /* Adjust the top position as needed */
+  left: 0;
+  background-color: #fff; /* Adjust background color as needed */
+  padding: 50px;
+  display: none; /* Initially hide the navigation list */
+  height: 100vh;
+}
+
+.navigation-list ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation-list ul li {
+  margin-bottom: 5px;
+}
+
+.navigation-list a {
+  text-decoration: none;
+  color: #333; /* Adjust link color as needed */
+}
+
+.navigation-list a:hover {
+  color: #007bff; /* Adjust link color on hover as needed */
+}
+
+#indexNavigation {
+  z-index: 10000;
+  font-family: 'Univers';
+}

@@ -184,3 +184,9 @@ let isImagesMode = true;
         }
 
         
+
+        // Add this to your existing script.js or in a <script> tag in the body of your HTML
+function toggleNavigation() {
+    var indexNavigation = document.getElementById('indexNavigation');
+    indexNavigation.style.display = (indexNavigation.style.display === 'block') ? 'none' : 'block';
+}
