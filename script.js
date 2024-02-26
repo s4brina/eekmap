@@ -79,7 +79,7 @@ container.addEventListener('wheel', (e) => {
     e.preventDefault(); // Prevent the default behavior of scrolling
 
     // Adjust the zoom level based on scroll direction
-    const zoomFactor = e.deltaY > 0 ? 0.95 : 1.05;
+    const zoomFactor = e.deltaY > 0 ? 0.90 : 1.10;
 
     // Get the cursor position relative to the container
     const cursorX = e.clientX - container.getBoundingClientRect().left;
@@ -138,3 +138,49 @@ window.onclick = function (event) {
     closeModal();
   }
 };
+
+let isImagesMode = true;
+
+        const wordTexts = [
+            "Your Word 1 Text",
+            "Your Word 2 Text",
+            // Add more text for other words as needed
+        ];
+
+        function showWords() {
+            if (isImagesMode) {
+                isImagesMode = false;
+        
+                // Hide image elements
+                document.querySelectorAll('.image-element').forEach((element) => {
+                    element.style.display = 'none';
+                });
+        
+                // Show text elements
+                document.querySelectorAll('.text-element').forEach((element) => {
+                    element.style.display = 'block';
+                });
+        
+                updateTextContent(wordTexts);
+            }
+        }
+        
+        function showImages() {
+            if (!isImagesMode) {
+                isImagesMode = true;
+        
+                // Hide text elements
+                document.querySelectorAll('.text-element').forEach((element) => {
+                    element.style.display = 'none';
+                });
+        
+                // Show image elements
+                document.querySelectorAll('.image-element').forEach((element) => {
+                    element.style.display = 'block';
+                });
+        
+                updateTextContent(wordTexts);
+            }
+        }
+
+        

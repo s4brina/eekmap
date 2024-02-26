@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400&display=swap');
 
+body {
+    background-color: rgb(235, 235, 235);
+}
 .main {
     font-family: "EB Garamond", serif;
     line-height: 1.6;
@@ -19,12 +22,16 @@ header {
 
 h1 {
     margin: 0;
-    font-family: 'Univers LT Std';
+    font-family: 'Univers';
+    font-style: normal;
+    font-weight: 800;
+    font-stretch: expanded;
     font-size: 50px;
     line-height: 50px;
 }
 
 #publish-date {
+    font-family: 'Univers';
     font-style: italic;
     padding: 0px;
     margin: 0px;
@@ -52,10 +59,12 @@ a:hover {
 
 .sub {
     padding-bottom: 30px;
+    font-family: 'Univers';
+    font-weight: 800;
 }
 
 dl {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "EB Garamond", serif;
     font-size: 13px;
 }
 
@@ -76,8 +85,8 @@ dl {
 }
 
 .image-frame {
-    height: 100vh;
-    height: 500px;
+    height: 100%;
+    width: 100%;
     overflow: hidden; 
     margin-bottom: 20px;
 }
@@ -140,7 +149,7 @@ dl {
 
 
 #article-content  {
-    font-size: 18px;
+    font-size: 20px;
 }
 
 #fixedLogo img {
@@ -151,4 +160,32 @@ dl {
     z-index: 999; /* Ensure it appears above other elements */
     max-width: 6%;
     max-height: 6%;
+  }
+
+
+
+  
+
+  #fixedLogo {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 20px; /* Adjust this margin as needed */
+    z-index: 999; /* Ensure it appears above other elements */
+  }
+
+  .logo {
+    font-family: 'Univers';
+    font-style: normal;
+    font-weight: 500;
+    font-stretch: expanded;
+    color: rgb(47, 255, 0);
+    font-size: 40px;
+    margin-bottom: 0px;
+  }
+
+.back-padding  {
+    background-color: transparent;
+    font-family: 'Univers';
+    font-weight: 800;
   }

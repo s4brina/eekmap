@@ -2,6 +2,7 @@ body, html {
   margin: 0;
   padding: 0;
   overflow: hidden;
+  background-color: rgb(235, 235, 235);
 }
 
 body {
@@ -23,6 +24,15 @@ body:active {
   overflow: hidden;
 }
 
+@media only screen and (max-width: 600px) {
+  /* Media query for small screens */
+  .pan-zoom-container {
+    width: 100%;
+    margin-top: 200%;
+    overflow: hidden;
+  }
+}
+
 .colored-element {
   position: absolute;
   width: 10px;
@@ -42,10 +52,12 @@ height: 300vh;
 #element4 {
   width: auto;
   height: auto;
-  font-size: 20px;
+  font-size: 21px;
   background-color: transparent;
-  font-family: 'Univers45Light', sans-serif;
-  font-weight:900;
+  font-family: 'Univers';
+  font-style: normal;
+  font-weight: 800;
+  font-stretch: expanded;
   position: absolute;
   text-align: center;
   text-wrap: nowrap;
@@ -56,13 +68,16 @@ height: 300vh;
   height: auto;
   font-size: 10px;
   background-color: transparent;
-  font-family: 'Univers45Light', sans-serif;
+  font-family: 'Univers';
+  font-style: normal;
+  font-weight: 800;
+  font-stretch: expanded;
   position: absolute;
   line-height: 13px;
   border: 1px solid;
   padding: 4px;
   border-radius: 2px;
-  background-color: white;
+  background-color: rgb(235, 235, 235);
   text-wrap: nowrap;
 }
 
@@ -79,8 +94,10 @@ height: 300vh;
   left: 0;
   padding: 20px;
   pointer-events: none;
-  font-family: 'Univers45Light', sans-serif;
-  font-weight:900;
+  font-family: 'Univers';
+  font-style: normal;
+  font-weight: 800;
+  font-stretch: expanded;
   font-size: 22px;
 }
 
@@ -122,180 +139,10 @@ height: 300vh;
 }
 
 @font-face {
-  font-family: 'Univers45Light';
-  src: url('path/to/fonts/univers45-light.woff2') format('woff2'),
-       url('path/to/fonts/univers45-light.woff') format('woff');
-  /* Add more formats if needed */
-  font-weight: normal;
-  font-style: normal;
-}
-
-
-@font-face {
-  font-family: "Univers";
-  src: url("Univers.woff#39");
-  font-style: normal;
-  font-weight: 200;
-  font-stretch: extra-condensed;
-}
-
-@font-face {
-  font-family: "Univers";
-  src: url("Univers.woff#45");
-  font-style: normal;
-  font-weight: 300;
-  font-stretch: normal;
-}
-
-@font-face {
-  font-family: "Univers";
-  src: url("Univers.woff#46");
-  font-style: italic;
-  font-weight: 300;
-  font-stretch: normal;
-}
-
-@font-face {
-  font-family: "Univers";
-  src: url("Univers.woff#47");
-  font-style: normal;
-  font-weight: 300;
-  font-stretch: condensed;
-}
-
-@font-face {
-  font-family: "Univers";
-  src: url("Univers.woff#48");
-  font-style: italic;
-  font-weight: 300;
-  font-stretch: condensed;
-}
-
-@font-face {
-  font-family: "Univers";
-  src: url("Univers.woff#49");
-  font-style: normal;
-  font-weight: 300;
-  font-stretch: extra-condensed;
-}
-
-@font-face {
-  font-family: "Univers";
-  src: url("Univers.woff#53");
-  font-style: normal;
-  font-weight: 400;
-  font-stretch: expanded;
-}
-
-@font-face {
-  font-family: "Univers";
-  src: url("Univers.woff#55");
-  font-style: normal;
-  font-weight: 400;
-  font-stretch: normal;
-}
-
-@font-face {
-  font-family: "Univers";
-  src: url("Univers.woff#56");
-  font-style: italic;
-  font-weight: 400;
-  font-stretch: normal;
-}
-
-@font-face {
-  font-family: "Univers";
-  src: url("Univers.woff#57");
-  font-style: normal;
-  font-weight: 400;
-  font-stretch: condensed;
-}
-
-@font-face {
-  font-family: "Univers";
-  src: url("Univers.woff#58");
-  font-style: italic;
-  font-weight: 400;
-  font-stretch: condensed;
-}
-
-@font-face {
-  font-family: "Univers";
-  src: url("Univers.woff#59");
-  font-style: normal;
-  font-weight: 400;
-  font-stretch: extra-condensed;
-}
-
-@font-face {
-  font-family: "Univers";
-  src: url("Univers.woff#63");
-  font-style: normal;
-  font-weight: 700;
-  font-stretch: expanded;
-}
-
-@font-face {
-  font-family: "Univers";
-  src: url("Univers.woff#65");
-  font-style: normal;
-  font-weight: 700;
-  font-stretch: normal;
-}
-
-@font-face {
-  font-family: "Univers";
-  src: url("Univers.woff#66");
-  font-style: italic;
-  font-weight: 700;
-  font-stretch: normal;
-}
-
-@font-face {
-  font-family: "Univers";
-  src: url("Univers.woff#67");
-  font-style: normal;
-  font-weight: 700;
-  font-stretch: condensed;
-}
-
-@font-face {
-  font-family: "Univers";
-  src: url("Univers.woff#68");
-  font-style: italic;
-  font-weight: 700;
-  font-stretch: condensed;
-}
-
-@font-face {
   font-family: "Univers";
   src: url("Univers.woff#73");
   font-style: normal;
   font-weight: 800;
-  font-stretch: expanded;
-}
-
-@font-face {
-  font-family: "Univers";
-  src: url("Univers.woff#75");
-  font-style: normal;
-  font-weight: 800;
-  font-stretch: normal;
-}
-
-@font-face {
-  font-family: "Univers";
-  src: url("Univers.woff#76");
-  font-style: italic;
-  font-weight: 800;
-  font-stretch: normal;
-}
-
-@font-face {
-  font-family: "Univers";
-  src: url("Univers.woff#83");
-  font-style: normal;
-  font-weight: 900;
   font-stretch: expanded;
 }
 
@@ -306,5 +153,67 @@ height: 300vh;
   right: 0;
   margin: 20px; /* Adjust this margin as needed */
   z-index: 999; /* Ensure it appears above other elements */
+}
+
+nav {
+  font-family: 'Univers';
+  font-style: normal;
+  font-weight: 800;
+  font-stretch: expanded;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 32px;
+  color: black;
+  z-index: 10000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  padding: 20px;
+}
+
+nav li {
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+
+a {
+  text-decoration: none;
+  color: black;
+  padding-inline:20px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.text-element {
+  display: none;
+  font-size: 15px;
+  white-space: nowrap;
+  font-family: 'Univers';
+  font-style: normal;
+  font-weight: 800;
+  font-stretch: expanded;
+}
+
+.logo {
+  font-family: 'Univers';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: expanded;
+  color: rgb(47, 255, 0);
+  font-size: 40px;
+  margin-bottom: 0px;
 }
 

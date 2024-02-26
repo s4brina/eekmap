@@ -9,6 +9,19 @@
 
 </head>
 <body>
+
+    <nav>
+        <ul>
+            <li><a href="#">index</a></li>
+        </ul>
+        <ul>
+            <li><a href="#"onclick="showImages()">images</a></li>
+            <li><a href="#" onclick="showWords()">words</a></li>
+            <li><a href="#">dada</a></li>
+        </ul>
+    </nav>
+
+
     <div id="cursor">X: 0, Y: 0</div>
 
     <script>
@@ -24,27 +37,118 @@
     <div class="pan-zoom-container" id="panZoomContainer">
         <!-- Replace src attribute with the path to your images -->
         <a href="#" onclick="openModal('a_ghost_said.png')">
-            <div class="colored-element" id="element1" style="left: 7950px; top: 8400px; width: 10px;">
-              <img src="a_ghost_said.png" alt="Image 2">
+
+
+            <div class="colored-element image-element" id="element1" style="left: 7950px; top: 8400px; width: 10px;">
+              <img src="a_ghost_said.png" alt="Image 2" style="width: 1600%"></div>
+
+
+              <div class="colored-element text-element" id="element3" style="left: 7950px; top: 8400px;">
+                <div class="text-content" id="textInfo4">A Ghost Said - Collage</div>
             </div>
-          </a>
+            </a>
+            
           
-        <a href="felix.html"><div class="colored-element" id="element2" style="left: 7600px; top: 8100px; width: 0.5px;">
-            <img src="DBA.jpg" alt="Image 2">
-        </div></a>
-        <a href="chatreuse-and-other-colours.html"><div class="colored-element" id="element3" style="left: 7800px; top: 8000px;">
+        <a href="felix.html">
+
+            <div class="colored-element image-element" id="element2" style="left: 8100px; top: 8200px;">
+                <img src="DBA.jpg" alt="Image 2" style="width: 1300%">
+            </div>
+            
+            <div class="colored-element text-element" id="element2" style="left: 8000px; top: 8200px; width: 0.5px;">
+                <div class="text-content" id="textInfo2">Diary from the David Beckham National Airport</div>
+            </div>
+
+        </a>
+
+        
+        <a href="chatreuse-and-other-colours.html">
+            
+            <div class="colored-element image-element" id="element3" style="left: 8050px; top: 8500px;">
             <img src="chatreuse.png" alt="Image 3">
-        </div></a>
-        <a href="felix-interview.html"><div class="colored-element" id="element3" style="left: 7900px; top: 8200px;">
-            <img src="felix.png" alt="Image 3">
-        </div></a> 
-        <a href="gunung-tan.html"><div class="colored-element" id="element3" style="left: 7650px; top: 7950px;">
-            <img src="both-art.png" alt="Image 3">
-        </div></a>
-        <a href="heaven-knows-what.html"><div class="colored-element" id="element3" style="left: 7450px; top: 7950px;">
-            <img src="heaven-knows-what.jpg" alt="Image 3">
-        </div></a>
-        <div class="colored-element title" id="element4" style="left: 0px; top: 0px;">ELLIPTICAL EXPERIENCES AT THE KENO</div>
+        </div>
+        
+        <div class="colored-element text-element" id="element2" style="left: 8050px; top: 8550px;">
+            <div class="text-content" id="textInfo3">Chatreuse and Other Colours</div>
+        </div>
+
+        </a>
+            
+        
+        <a href="felix-interview.html">
+            
+            <div class="colored-element image-element" id="element3" style="left: 8450px; top: 8200px;">
+            <img src="felix.png" alt="Image 4" style="width: 1300%">
+        </div>
+
+        <div class="colored-element text-element" id="element3" style="left: 8500px; top: 8250px;">
+            <div class="text-content" id="textInfo4">Felix Mcnamara</div>
+        </div>
+    
+    </a> 
+
+        <a href="gunung-tan.html">
+            
+        <div class="colored-element image-element" id="element3" style="left: 8600px; top: 8500px;">
+            <img src="kratom.jpg" alt="Image 5">
+        </div>
+
+        <div class="colored-element text-element" id="element3" style="left: 8550px; top: 8550px;">
+            <div class="text-content" id="textInfo4">Poor Things and Other Things</div>
+        </div>
+        
+
+    </a>
+        <a href="heaven-knows-what.html">
+            
+        <div class="colored-element image-element" id="element3" style="left: 8300px; top: 8150px">
+            <img src="heaven-knows-what.jpg" alt="Image 3" style="width: 700%">
+            </div>
+
+        <div class="colored-element text-element" id="element3" style="left: 8300px; top: 8100px;">
+            <div class="text-content" id="textInfo4">Heaven Knows What</div>
+        </div>
+    
+    
+    </a>
+
+    <a href="world-of-sleep.html">
+            
+        <div class="colored-element image-element" id="element3" style="left: 8700px; top: 8300px">
+            <img src="world-of-sleep.png" alt="Image 3">
+        </div>
+
+        <div class="colored-element text-element" id="element3" style="left: 8700px; top: 8300px;">
+            <div class="text-content" id="textInfo4">A World of Sleep</div>
+        </div>
+    
+    </a>
+
+    <a href="a-ghost-said.html">
+            
+        <div class="colored-element image-element" id="element3" style="left: 8300px; top: 8550px">
+            <img src="pic2.jpg" alt="Image 3">
+        </div>
+
+        <div class="colored-element text-element" id="element3" style="left: 8300px; top: 8600px;">
+            <div class="text-content" id="textInfo4">A Ghost Said</div>
+        </div>
+    
+    </a>
+
+    <a href="more-things.html">
+            
+        <div class="colored-element image-element" id="element3" style="left: 8750px; top: 8400px">
+            <img src="Takkab.jpg" alt="Image 3">
+        </div>
+
+        <div class="colored-element text-element" id="element3" style="left: 8750px; top: 8400px;">
+            <div class="text-content" id="textInfo4">More things</div>
+        </div>
+    
+    </a>
+
+        <div class="colored-element title" id="element4" style="left: 0px; top: 0px;">ELLIPTICAL EXPERIENCES AT THE KINO</div>
         <div class="colored-element" id="element5" style="left: 0px; top: 0px;">hold down mouse or finger to pan around <br>
             use scroll wheel or fingers to zoom in and out</div>
     </div>
@@ -55,7 +159,7 @@
     </div>
 
     <div id="fixedLogo">
-        <img src="logo.png" alt="Your Logo">
+        <p class="logo">eek</p>
     </div>
 
     <script src="script.js"></script>
