@@ -252,4 +252,5 @@ a:hover {
 #indexNavigation {
   z-index: 10000;
   font-family: 'Univers';
+  display:none;
 }
