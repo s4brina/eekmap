@@ -276,3 +276,10 @@ a:hover {
   color: #007bff; /* Adjust close button color on hover as needed */
 }
 
+
+
+
+.colored-element {
+  position: absolute;
+  transform-origin: 0 100; /* Set the transform origin to the top-left corner */
+}
