@@ -66,26 +66,32 @@ height: 300vh;
 #element5 {
   width: auto;
   height: auto;
-  font-size: 10px;
+  font-size: 15px;
   background-color: transparent;
   font-family: 'Univers';
   font-style: normal;
   font-weight: 800;
   font-stretch: expanded;
   position: absolute;
-  line-height: 13px;
+  line-height: 20px;
   border: 1px solid;
-  padding: 4px;
+  padding: 15px;
   border-radius: 2px;
   background-color: rgb(235, 235, 235);
   text-wrap: nowrap;
 }
 
-
 #element5 {
   position: absolute;
-  transform: translate(0%, 100%);
+  translate: 0px 80px ;
 }
+
+.outside-element5 {
+  padding-top: 50px;
+}
+
+
+
 
 #cursor {
   z-index: 100000;
@@ -252,5 +258,20 @@ a:hover {
 #indexNavigation {
   z-index: 10000;
   font-family: 'Univers';
-  display:none;
+  display: none;
+}
+
+
+/* Add this to your existing style.css or in a <style> tag in the head of your HTML */
+.close-btn {
+  position: absolute;
+  top: 0px;
+  right: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #333; /* Adjust close button color as needed */
+}
+
+.close-btn:hover {
+  color: #007bff; /* Adjust close button color on hover as needed */
 }

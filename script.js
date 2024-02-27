@@ -190,3 +190,25 @@ function toggleNavigation() {
     var indexNavigation = document.getElementById('indexNavigation');
     indexNavigation.style.display = (indexNavigation.style.display === 'block') ? 'none' : 'block';
 }
+
+
+
+
+// Add this to your existing script.js or in a <script> tag in the body of your HTML
+document.addEventListener('DOMContentLoaded', function () {
+    // Check if element5 was closed during the session
+    const isElement5Closed = localStorage.getItem('isElement5Closed');
+    const element5 = document.getElementById('element5');
+
+    if (isElement5Closed === 'true') {
+        element5.style.display = 'none';
+    }
+});
+
+function closeElement5() {
+    const element5 = document.getElementById('element5');
+    element5.style.display = 'none';
+
+    // Set a flag in localStorage to remember that element5 was closed during the session
+    localStorage.setItem('isElement5Closed', 'true');
+}
